@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide passer</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="row bg-dark h-75 w-75 container-extern rounded-1">
+        <div class="left-side-bar "></div>
+        <div id="lista" class="bg-dark">
+            <div class="toggle-btn bg-dark">
+                <span>&#9776;</span>
+            </div>
+            <ul class="my-4">
+                <li class="mb-3 mt-4">Diapositiva 1</li>
+                <li class="mb-3">Diapositiva 2</li>
+                <li class="mb-3">Diapositiva 3</li>
+            </ul>
+        </div>
+        <div class="right-side-bar">
+            <div class="row text-center backgroundGray heigth-90 d-flex justify-content-center">
+                <img src="" class="img-fluid p-2 width-95 h-auto slide-img mb-4" alt="Slide-1">
+            </div>
+            <div class="row text-secondary heigth-10 backgroundDark">
+                <div class="d-flex justify-content-center align-items-end pb-2">
+                    <button class=" border-0 rounded-2 px-3 py-2" id="btnBack">back</button>
+                    <div class="d-inline mx-2 bg-light rounded-1 mb-2 px-2 d-flex align-items-center">
+                        <span id="currentSlide">1</span><span>/</span><span id="totalSlides"></span>
+                    </div>
+                    <button class="border-0 rounded-2 px-3 py-2" id="btnNext">next</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- JavaScript code -->
+    <script src="code/main.js"></script>
+</body>
+
+</html>
